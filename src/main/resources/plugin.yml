@@ -1,0 +1,9 @@
+name: DeftBungee
+main: us.deftcraft.DeftBungee
+version: 1.0
+author: 2xjtn
+commands:
+  hub:
+    aliases: [lobby]
+  rank:
+  sc:
