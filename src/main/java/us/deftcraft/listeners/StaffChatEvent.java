@@ -30,6 +30,10 @@ public class StaffChatEvent implements Listener {
                 return;
             }
 
+            if(e.getMessage().startsWith("/")) {
+                return;
+            }
+
             if (DeftBungee.staffchat.get(p)) {
 
                 Map<String, ServerInfo> servers = DeftBungee.getInstance().getProxy().getServers();
@@ -45,7 +49,8 @@ public class StaffChatEvent implements Listener {
                         if (p.hasPermission("deftbungee.staffchat.see")) {
                             player1.sendMessage(
                                     new TextComponent(
-                                            ChatColor.DARK_GRAY + "[" + ChatColor.GRAY + "Staff" + ChatColor.GOLD + "Chat" + ChatColor.DARK_GRAY + "] "
+                                            ChatColor.GREEN + "[" + p.getServer().getInfo().getName() + "] " +
+                                                    ChatColor.DARK_GRAY + "[" + ChatColor.GRAY + "Staff" + ChatColor.GOLD + "Chat" + ChatColor.DARK_GRAY + "] "
                                                     + ChatColor.DARK_RED + p.getName() + ": " + ChatColor.RED + e.getMessage()));
                         }
                     }

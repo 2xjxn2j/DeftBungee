@@ -2,10 +2,7 @@ package us.deftcraft;
 
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Plugin;
-import us.deftcraft.commands.LobbyCommand;
-import us.deftcraft.commands.RankCommand;
-import us.deftcraft.commands.SendCommand;
-import us.deftcraft.commands.StaffChatCommand;
+import us.deftcraft.commands.*;
 import us.deftcraft.listeners.StaffChatEvent;
 
 import java.util.HashMap;
@@ -28,6 +25,7 @@ public class DeftBungee extends Plugin {
         getProxy().getPluginManager().registerCommand(this, new LobbyCommand());
         getProxy().getPluginManager().registerCommand(this, new RankCommand());
         getProxy().getPluginManager().registerCommand(this, new StaffChatCommand());
+        getProxy().getPluginManager().registerCommand(this, new AnnounceCommand());
 
         getProxy().getPluginManager().registerListener(this, new StaffChatEvent());
 

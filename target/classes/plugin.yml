@@ -7,3 +7,4 @@ commands:
     aliases: [lobby]
   rank:
   sc:
+  announce:

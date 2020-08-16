@@ -2,5 +2,7 @@ us\deftcraft\DeftBungee.class
 us\deftcraft\commands\StaffChatCommand.class
 us\deftcraft\listeners\StaffChatEvent.class
 us\deftcraft\commands\SendCommand.class
+us\deftcraft\commands\AnnounceCommand.class
 us\deftcraft\commands\RankCommand.class
+us\deftcraft\listeners\PlayerPingChatListener.class
 us\deftcraft\commands\LobbyCommand.class
