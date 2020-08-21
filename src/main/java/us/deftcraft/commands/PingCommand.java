@@ -35,7 +35,7 @@ public class PingCommand extends Command
                 return;
             }
 
-            p.sendMessage(new TextComponent(ChatColor.GRAY + "Your latency is " + ChatColor.GOLD + pp.getPing() + ChatColor.GRAY + "ms."));
+            p.sendMessage(new TextComponent(ChatColor.GOLD + pp.getName() + "'s latency is " + ChatColor.GOLD + pp.getPing() + ChatColor.GRAY + "ms."));
 
         }
     }

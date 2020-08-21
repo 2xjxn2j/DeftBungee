@@ -1,4 +1,5 @@
 us\deftcraft\DeftBungee.class
+us\deftcraft\commands\PingCommand.class
 us\deftcraft\commands\StaffChatCommand.class
 us\deftcraft\listeners\StaffChatEvent.class
 us\deftcraft\commands\SendCommand.class
