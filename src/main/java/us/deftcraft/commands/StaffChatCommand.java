@@ -64,12 +64,12 @@ public class StaffChatCommand extends Command {
             for (ProxiedPlayer player1 : players) {
 
 
-                if (player.hasPermission("deftbungee.staffchat.see")) {
+                if (player1.hasPermission("deftbungee.staffchat.see")) {
                     player1.sendMessage(
                             new TextComponent(
                                     ChatColor.GREEN + "[" + player.getServer().getInfo().getName() + "] " +
                                     ChatColor.DARK_GRAY + "[" + ChatColor.GRAY + "Staff" + ChatColor.GOLD + "Chat" + ChatColor.DARK_GRAY + "] "
-                                            + ChatColor.DARK_RED + player.getName() + ": " + ChatColor.RED + message));
+                                            + ChatColor.DARK_RED + player.getName() + ": " + ChatColor.RESET + message));
                 }
             }
         }

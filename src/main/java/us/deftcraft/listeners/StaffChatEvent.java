@@ -5,6 +5,7 @@ import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.config.ServerInfo;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.event.ChatEvent;
+import net.md_5.bungee.api.event.PlayerDisconnectEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 import us.deftcraft.DeftBungee;
@@ -46,12 +47,12 @@ public class StaffChatEvent implements Listener {
                     for (ProxiedPlayer player1 : players) {
 
 
-                        if (p.hasPermission("deftbungee.staffchat.see")) {
+                        if (player1.hasPermission("deftbungee.staffchat.see")) {
                             player1.sendMessage(
                                     new TextComponent(
                                             ChatColor.GREEN + "[" + p.getServer().getInfo().getName() + "] " +
                                                     ChatColor.DARK_GRAY + "[" + ChatColor.GRAY + "Staff" + ChatColor.GOLD + "Chat" + ChatColor.DARK_GRAY + "] "
-                                                    + ChatColor.DARK_RED + p.getName() + ": " + ChatColor.RED + e.getMessage()));
+                                                    + ChatColor.DARK_RED + p.getName() + ": " + ChatColor.RESET + e.getMessage()));
                         }
                     }
                 }

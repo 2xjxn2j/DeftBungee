@@ -26,6 +26,7 @@ public class DeftBungee extends Plugin {
         getProxy().getPluginManager().registerCommand(this, new RankCommand());
         getProxy().getPluginManager().registerCommand(this, new StaffChatCommand());
         getProxy().getPluginManager().registerCommand(this, new AnnounceCommand());
+        getProxy().getPluginManager().registerCommand(this, new PingCommand());
 
         getProxy().getPluginManager().registerListener(this, new StaffChatEvent());
 
